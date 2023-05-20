@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    
+}
+
+body{
+    width: 100%;
+   height:auto;
+   overflow-x: hidden;
+}
+/* navbar */
+
+
+header{
+        background-color: rgb(95, 119, 45);
+        position: sticky;
+        top: 0%;
+}
+.navbar{
+    width: 100vw;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    color:white;
+    font-size: 22px;
+    padding: 0px 20px 0px 10px;
+    margin-bottom: 100px;
+
+
+}
+
+
+.list-items li{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+li {
+    list-style: none;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+ul li a{
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+ul li:hover,a:hover{
+    color:rgb(194, 255, 103);
+    text-decoration: underline;
+}
+
+
+/* table */
+.table-sec{
+    background-color: white;
+    width: 100%;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Rubik', sans-serif;
+    margin-bottom: 200px;
+ 
+}
+table{
+    background-color: rgb(254, 255, 196);
+    
+}
+#main-table{
+    width: 70vw;
+  
+}
+thead{
+    border-spacing: 0;
+    background-color: rgb(110, 127, 52);
+    color: #ffff;
+    border: 1px solid black;
+    height: 45px;
+    
+} 
+td{
+    height: 40px;
+    width: auto;
+    padding: 10px;
+    border: 1px solid rgb(164, 164, 164);
+}
+.nested-table tr{
+    height: 45px;
+    
+}
+.nested-table th{
+    padding: 10px;
+    
+}
+
+
+
+
+/* form */
+
+.reg-form{
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+   
+   
+}
+label{
+    color: white;
+    font-weight: 600;
+    
+}
+.form-container{
+    margin-left:15px ;
+    width:50%;
+    background-color: rgb(110, 127, 52);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+ input{
+    width: 95%;
+    padding: 7px;
+    border:1px solid rgb(190, 190, 190);
+    cursor: pointer;
+    background-color: rgba(247, 255, 216, 0.849);
+    border-radius: 5px;
+    border: none;
+    
+}
+
+
+#register-btn{
+    background-color: black;
+    color: white;
+    width: 97.5%;
+    height: 40px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#register-btn:hover{
+    background-color: rgb(38, 38, 38);
+}

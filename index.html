@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library Form</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="book-icon.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- sticky nav bar -->
+    <header id="header">
+        <nav class="navbar">
+            <div class="logo">
+                <p>Library System</p>
+            </div>
+
+            <div class="list">
+                <ul class="list-items">
+                    <li><a href="#">Books</a></li>
+                    <li><a href="#register">Register</a></li>
+                    <li>Contact Us</li>
+                    <li>Logout</li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- main body -->
+    <main>
+        <!-- table  -->
+
+        <section class="table-sec">
+            <h1 id="books">Books</h1>
+            <table id="main-table">
+                <thead>
+                    <th>Book ID</th>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Genre</th>
+                    <th>Availability</th>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>
+                            <table class="nested-table">
+                                <a href="#">
+                                    <h3>Book Title 1</h3>
+                                </a>
+                                <thead>
+                                    <th>Publication Date</th>
+                                    <th>Page Count</th>
+                                    <th>ISBN</th>
+                                </thead>
+
+                                <tbody>
+                                    <tr>
+                                        <td>Jan 1,2000</td>
+                                        <td>516</td>
+                                        <td>1233454</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td>Author Name 1</td>
+                        <td>Genre 1</td>
+                        <td>Available</td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>
+                            <table class="nested-table">
+                                <a href="#">
+                                    <h3>Book Title 2</h3>
+                                </a>
+                                <thead>
+                                    <th>Publication Date</th>
+                                    <th>Page Count</th>
+                                    <th>ISBN</th>
+                                </thead>
+
+                                <tbody>
+                                    <tr>
+                                        <td>Jan 1,2000</td>
+                                        <td>516</td>
+                                        <td>1233454</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+
+                        <td>Author Name 2</td>
+                        <td>Genre 2</td>
+                        <td>Available</td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>
+                            <table class="nested-table">
+                                <a href="#">
+                                    <h3>Book Title 3</h3>
+                                </a>
+                                <thead>
+                                    <th>Publication Date</th>
+                                    <th>Page Count</th>
+                                    <th>ISBN</th>
+                                </thead>
+
+                                <tbody>
+                                    <tr>
+                                        <td>Jan 1,2000</td>
+                                        <td>516</td>
+                                        <td>1233454</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td>Author Name 3</td>
+                        <td>Genre 3</td>
+                        <td>Available</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>
+                            <table class="nested-table">
+                                <a href="#">
+                                    <h3>Book Title 4</h3>
+                                </a>
+                                <thead>
+                                    <th>Publication Date</th>
+                                    <th>Page Count</th>
+                                    <th>ISBN</th>
+                                </thead>
+
+                                <tbody>
+                                    <tr>
+                                        <td>Jan 1,2000</td>
+                                        <td>516</td>
+                                        <td>1233454</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td>Author Name 4</td>
+                        <td>Genre 4</td>
+                        <td>Available</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>
+                            <table class="nested-table">
+                                <a href="#">
+                                    <h3>Book Title 5</h3>
+                                </a>
+                                <thead>
+                                    <th>Publication Date</th>
+                                    <th>Page Count</th>
+                                    <th>ISBN</th>
+                                </thead>
+
+                                <tbody>
+                                    <tr>
+                                        <td>Jan 1,2000</td>
+                                        <td>516</td>
+                                        <td>1233454</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td>Author Name 5</td>
+                        <td>Genre 5</td>
+                        <td>Available</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+        <!-- registration form -->
+       
+        <section class="reg-form">
+            <h1 id="register">Register Here</h1>
+            <div class="form-container">
+
+
+
+                <form>
+
+                    <!--first name  -->
+                    <div>
+                        <label for="fname">First Name:</label>
+                        <br />
+                        <input placeholder="   Enter First Name" type="text" id="fname" name="fname" required />
+                    </div>
+                    <br />
+
+                    <!--last name  -->
+                    <div>
+                        <label for="lname">Last Name:</label>
+                        <br />
+                        <input placeholder="   Enter last Name" type="text" id="lname" name="lname" required />
+                    </div>
+                    <br />
+
+                    <!-- date of birth -->
+                    <div>
+                        <label for="dob">Date Of Birth:</label>
+                        <br />
+                        <input type="date" id="dob" name="dob" required />
+                    </div>
+                    <br />
+
+                    <!-- age -->
+                    <div>
+                        <label for="age">Age:</label>
+                        <br />
+                        <input placeholder="   Enter Your Age" type="number" id="age" name="age" min="5" max="100" />
+                    </div>
+                    <br />
+
+                    <!-- email -->
+                    <div>
+                        <label for="email">Email:</label>
+                        <br />
+                        <input placeholder="   Enter Emial" type="email" id="email" required />
+                    </div>
+                    <br />
+
+                    <!-- password -->
+                    <div>
+                        <label for="password">Password:</label>
+                        <br />
+                        <input placeholder="   Enter Password" type="password" id="password" pattern=".{6,}" required />
+                    </div>
+                    <br />
+
+                    <!-- confirm password  -->
+                    <div>
+                        <label for="confirm-password">Confirm Password:</label>
+                        <br />
+                        <input placeholder="   Confirm Password" type="password" id="confirm-password"  required />
+                    </div>
+                    <br />
+
+                    <!-- register btn -->
+                    <div>
+                        <input id="register-btn" type="submit" value="Register" />
+                    </div>
+                    <br />
+
+
+                </form>
+            </div>
+        </section>
+   
+</body>
+
+</html>
